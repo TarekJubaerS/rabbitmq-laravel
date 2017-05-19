@@ -26,6 +26,15 @@ Publish the configuration file and edit it if needed in config/rabbitmq-laravel.
 ``` bash
 $ php artisan vendor:publish
 ```
+Add following configuration to .env file
+```bash
+RABBITMQ_HOST=127.0.0.1
+RABBITMQ_PORT=5672
+RABBITMQ_VHOST=/
+RABBITMQ_LOGIN=guest
+RABBITMQ_PASSWORD=guest
+RABBITMQ_QUEUE=myqueue
+```
 
 ## Usage
 - Publish Message to queue
